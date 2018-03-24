@@ -6,6 +6,7 @@ import React, { Component } from 'react';
 // import NewPost from '../../components/NewPost/NewPost';
 import './Blog.css';
 import Posts from './Posts/Posts';
+import NewPost from './NewPost/NewPost';
 import { Route } from 'react-router-dom';
 
 class Blog extends Component {
@@ -31,6 +32,7 @@ class Blog extends Component {
                     <NewPost />
                 </section> */}
                 <Route path="/" exact component={Posts} />
+                <Route path="/new-post" component={NewPost} />
             </div>
         );
     }
